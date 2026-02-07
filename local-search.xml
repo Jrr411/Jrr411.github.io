@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第三篇博客</title>
+    <link href="/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：SWPUCTF 2022 新生赛</li><li><strong>题目</strong>：base64-2</li><li><strong>类型</strong>：Reserve（逆向工程）</li></ul><hr><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1. 查壳"></a>1. 查壳</h2><p>首先将文件拖入exeinfpoe进行查壳，结果发现没有壳，是64位的<br><img src="/images/3image-1.png" alt="alt text"></p><hr><h2 id="2-逆向分析"><a href="#2-逆向分析" class="headerlink" title="2. 逆向分析"></a>2. 逆向分析</h2><p>将文件拖入IDA中先查看一下字符串<br><img src="/images/3image-2.png" alt="alt text"><br>找到了疑似base64加密的字符串GyAGD1ETr3AcGKNkZ19PLKAyAwEsAIELHx1nFSH2IwyGsD&#x3D;&#x3D;,接着跟进一下<br><img src="/images/3image-3.png" alt="alt text"><br>得到了加密字符串和解码表<br>加密字符串：GyAGD1ETr3AcGKNkZ19PLKAyAwEsAIELHx1nFSH2IwyGsD&#x3D;&#x3D;<br>解码表：NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm0123456789+&#x2F;</p><hr><h2 id="3-解码"><a href="#3-解码" class="headerlink" title="3. 解码"></a>3. 解码</h2><p>用在线网站cyberchef进行解码<br><img src="/images/3image-4.png" alt="alt text"><br>得到了flag</p><h2 id="4-Flag"><a href="#4-Flag" class="headerlink" title="4. Flag"></a>4. Flag</h2><p>NSSCTF{siMp13_Base64_5TXRMZHU6V9S}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第二篇博客</title>
     <link href="/2026/02/07/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/07/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
