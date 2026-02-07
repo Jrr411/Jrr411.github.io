@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第四篇博客</title>
+    <link href="/2026/02/07/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/02/07/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="知识点总结1"><a href="#知识点总结1" class="headerlink" title="知识点总结1"></a>知识点总结1</h2><ul><li><strong>第一题</strong>：[SWPUCTF 2022 新生赛]upx</li><li><strong>第二题</strong>：[NISACTF 2022]sign-ezc++</li><li><strong>第三题</strong>：[SWPUCTF 2022 新生赛]base64-2</li></ul><hr><h2 id="一、-SWPUCTF-2022-新生赛-upx"><a href="#一、-SWPUCTF-2022-新生赛-upx" class="headerlink" title="一、[SWPUCTF 2022 新生赛]upx"></a>一、[SWPUCTF 2022 新生赛]upx</h2><p>UPX特征识别：<br>  strings filename | grep UPX    # 查看UPX特征<br>  file filename                  # 查看文件类型<br>  upx -d file.exe                # 直接脱壳</p><hr><h2 id="二、-NISACTF-2022-sign-ezc"><a href="#二、-NISACTF-2022-sign-ezc" class="headerlink" title="二、[NISACTF 2022]sign-ezc++"></a>二、[NISACTF 2022]sign-ezc++</h2><p>一个C++程序，内部有数学公式检查flag。输入字符经过(字符×A+B)%256计算后，要与预设值匹配。<br>例子：&#x2F;&#x2F; 可能看到这样的代码：<br>     for ( i &#x3D; 0; i &lt; 32; ++i ) {<br>         v5 &#x3D; input[i];<br>         v5 &#x3D; (v5 * 0x1234 + 0x5678) % 0x100;<br>         if ( v5 !&#x3D; secret_data[i] )<br>             错误;<br>}</p><hr><h2 id="三、-SWPUCTF-2022-新生赛-base64-2"><a href="#三、-SWPUCTF-2022-新生赛-base64-2" class="headerlink" title="三、[SWPUCTF 2022 新生赛]base64-2"></a>三、[SWPUCTF 2022 新生赛]base64-2</h2><p>base编码表替换识别，进行解密和加密<br>base核心原理：<br>原始：3字节 &#x3D; 24bit<br>Base64：每6bit &#x3D; 1字符，4字符表示3字节</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第三篇博客</title>
     <link href="/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>

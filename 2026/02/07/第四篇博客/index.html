@@ -19,21 +19,31 @@
   <meta name="author" content="Lisianthus">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://jrr411.github.io/index.html">
+    <meta name="description" content="知识点总结1 第一题：[SWPUCTF 2022 新生赛]upx 第二题：[NISACTF 2022]sign-ezc++ 第三题：[SWPUCTF 2022 新生赛]base64-2   一、[SWPUCTF 2022 新生赛]upxUPX特征识别：  strings filename | grep UPX    # 查看UPX特征  file filename">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第四篇博客">
+<meta property="og:url" content="http://jrr411.github.io/2026/02/07/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="知识点总结1 第一题：[SWPUCTF 2022 新生赛]upx 第二题：[NISACTF 2022]sign-ezc++ 第三题：[SWPUCTF 2022 新生赛]base64-2   一、[SWPUCTF 2022 新生赛]upxUPX特征识别：  strings filename | grep UPX    # 查看UPX特征  file filename">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-07T12:56:34.000Z">
+<meta property="article:modified_time" content="2026-02-07T16:25:12.330Z">
 <meta property="article:author" content="Lisianthus">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Hexo</title>
+  <title>第四篇博客 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -83,7 +93,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -189,17 +199,53 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Lisianthus的博客"></span>
+            <span id="subtitle" data-typed-text="第四篇博客"></span>
           
         </div>
 
         
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-02-07 20:56" pubdate>
+          2026年2月7日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          491 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -211,191 +257,166 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">第四篇博客</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <h2 id="知识点总结1"><a href="#知识点总结1" class="headerlink" title="知识点总结1"></a>知识点总结1</h2><ul>
+<li><strong>第一题</strong>：[SWPUCTF 2022 新生赛]upx</li>
+<li><strong>第二题</strong>：[NISACTF 2022]sign-ezc++</li>
+<li><strong>第三题</strong>：[SWPUCTF 2022 新生赛]base64-2</li>
+</ul>
+<hr>
+<h2 id="一、-SWPUCTF-2022-新生赛-upx"><a href="#一、-SWPUCTF-2022-新生赛-upx" class="headerlink" title="一、[SWPUCTF 2022 新生赛]upx"></a>一、[SWPUCTF 2022 新生赛]upx</h2><p>UPX特征识别：<br>  strings filename | grep UPX    # 查看UPX特征<br>  file filename                  # 查看文件类型<br>  upx -d file.exe                # 直接脱壳</p>
+<hr>
+<h2 id="二、-NISACTF-2022-sign-ezc"><a href="#二、-NISACTF-2022-sign-ezc" class="headerlink" title="二、[NISACTF 2022]sign-ezc++"></a>二、[NISACTF 2022]sign-ezc++</h2><p>一个C++程序，内部有数学公式检查flag。输入字符经过(字符×A+B)%256计算后，要与预设值匹配。<br>例子：&#x2F;&#x2F; 可能看到这样的代码：<br>     for ( i &#x3D; 0; i &lt; 32; ++i ) {<br>         v5 &#x3D; input[i];<br>         v5 &#x3D; (v5 * 0x1234 + 0x5678) % 0x100;<br>         if ( v5 !&#x3D; secret_data[i] )<br>             错误;<br>}</p>
+<hr>
+<h2 id="三、-SWPUCTF-2022-新生赛-base64-2"><a href="#三、-SWPUCTF-2022-新生赛-base64-2" class="headerlink" title="三、[SWPUCTF 2022 新生赛]base64-2"></a>三、[SWPUCTF 2022 新生赛]base64-2</h2><p>base编码表替换识别，进行解密和加密<br>base核心原理：<br>原始：3字节 &#x3D; 24bit<br>Base64：每6bit &#x3D; 1字符，4字符表示3字节</p>
 
-<h1 style="display: none">Hexo</h1>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/07/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          第四篇博客
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/07/%E7%AC%AC%E5%9B%9B%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          知识点总结1 第一题：[SWPUCTF 2022 新生赛]upx 第二题：[NISACTF 2022]sign-ezc++ 第三题：[SWPUCTF 2022 新生赛]base64-2   一、[SWPUCTF 2022 新生赛]upxUPX特征识别：  strings filename | grep UPX    # 查看UPX特征  file filename
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-07 20:56" pubdate>
-              2026-02-07
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          第三篇博客
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          题目信息 比赛：SWPUCTF 2022 新生赛 题目：base64-2 类型：Reserve（逆向工程）   1. 查壳首先将文件拖入exeinfpoe进行查壳，结果发现没有壳，是64位的  2. 逆向分析将文件拖入IDA中先查看一下字符串找到了疑似base64加密的字符串GyAGD1ETr3AcGKNkZ19PLKAyAwEsAIELHx1nFSH2IwyGsD&#x3D;&#x3D;,接着跟
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-07 20:22" pubdate>
-              2026-02-07
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/07/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          第二篇博客
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/07/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          题目信息 比赛：NISACTF 2022 题目名：sign-ezc++ 类型：Reserve（逆向工程）   1. 查壳首先将文件拖入exeinfpoe进行查壳，结果发现没有壳，是64位的  2. 逆向分析将文件拖入IDA中反汇编一下接着跟进一下Human::~Human继续跟进off_4863D0看到了一串代码_ZN5Human9give_flagEv继续跟进一下再次进行一次反汇编看到了flag
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-07 18:37" pubdate>
-              2026-02-07
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-          第一篇博客
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" target="_self">
-        <div>
-          题目信息 比赛：SWPUCTF 2022 新生赛 题目名：upx 类型：Reserve（逆向工程）   1. 查壳用exeinfope进行查壳，知道是upx壳  2. 脱壳接着在虚拟机中进行脱壳，打开终端输入代码  upx -d p04.exe 就脱壳成功了  3. 逆向分析将脱壳的文件用IDA打开，打开反汇编界面，看到根据代码知道是每两个字符的异或  4. 解码用在线工具Cyberchef在线解
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-02-07 15:02" pubdate>
-              2026-02-07
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h2 class="index-header">
-        
-        <a href="/2026/01/27/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h2>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2026/01/27/hello-world/" target="_self">
-        <div>
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2026-01-27 13:58" pubdate>
-              2026-01-27
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
+                
               </div>
-            </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>第四篇博客</div>
+      <div>http://jrr411.github.io/2026/02/07/第四篇博客/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Lisianthus</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2026年2月7日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2026/02/07/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第三篇博客">
+                        <span class="hidden-mobile">第三篇博客</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -488,6 +509,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
