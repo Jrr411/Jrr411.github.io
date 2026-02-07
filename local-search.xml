@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>第一篇博客</title>
+    <link href="/2026/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/02/07/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：SWPUCTF 2022 新生赛</li><li><strong>题目名</strong>：upx</li><li><strong>类型</strong>：Reserve（逆向工程）</li></ul><hr><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1. 查壳"></a>1. <strong>查壳</strong></h2><p>用exeinfope进行查壳，知道是upx壳<br><img src="/imaages/1image-1.png" alt="alt text"></p><hr><h2 id="2-脱壳"><a href="#2-脱壳" class="headerlink" title="2. 脱壳"></a>2. 脱壳</h2><p>接着在虚拟机中进行脱壳，打开终端输入代码  upx -d p04.exe 就脱壳成功了<br><img src="/images/1image-2.png" alt="alt text"></p><hr><h2 id="3-逆向分析"><a href="#3-逆向分析" class="headerlink" title="3. 逆向分析"></a>3. 逆向分析</h2><p>将脱壳的文件用IDA打开，打开反汇编界面，看到<br><img src="/images/1image-3.png" alt="alt text"><br>根据代码知道是每两个字符的异或</p><hr><h2 id="4-解码"><a href="#4-解码" class="headerlink" title="4. 解码"></a>4. 解码</h2><p>用在线工具Cyberchef在线解码<br><img src="/images/1image-4.png" alt="alt text"><br>得到flag：NSSCTF{UPX_1s_xord_way_to_encrypt_flag}</p><hr><h2 id="5-Flag"><a href="#5-Flag" class="headerlink" title="5. Flag"></a>5. Flag</h2><p>NSSCTF{UPX_1s_xord_way_to_encrypt_flag}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title></title>
+    <link href="/2026/01/27/google/"/>
+    <url>/2026/01/27/google/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="/2026/01/27/hello-world/"/>
+    <url>/2026/01/27/hello-world/</url>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  
+</search>
