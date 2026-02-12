@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第六篇博客</title>
+    <link href="/2026/02/12/%E7%AC%AC%E5%85%AD%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/02/12/%E7%AC%AC%E5%85%AD%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：SWPUCTF 2021 新生赛</li><li><strong>题目</strong>：fakebase</li><li><strong>类型</strong>：Reserve（逆向工程）</li></ul><hr><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1. 查壳"></a>1. 查壳</h2><p>将下载好的文件拖入exeinfope中进行查壳，结果无壳<br><img src="/images/6image-1.png" alt="alt text"></p><hr><h2 id="2-逆向分析"><a href="#2-逆向分析" class="headerlink" title="2. 逆向分析"></a>2. 逆向分析</h2><p>发现是一个python文件，直接点开<br><img src="/images/6image-2.png" alt="alt text"></p><hr><h2 id="3-解码"><a href="#3-解码" class="headerlink" title="3. 解码"></a>3. 解码</h2><p>代码如下：<br>s_box &#x3D; ‘qwertyuiopasdfghjkzxcvb123456# $ ‘<br>cipher &#x3D; “u#k4ggia61egegzjuqz12jhfspfkay”</p><p>char_to_idx &#x3D; {c: i for i, c in enumerate(s_box)}</p><p>num_low &#x3D; 0<br>for c in reversed(cipher):<br>    num_low &#x3D; num_low * 31 + char_to_idx[c]</p><p>for high in range(31):<br>    full_num &#x3D; num_low + high * (31 ** len(cipher))</p><pre><code class="hljs">binary = bin(full_num)[2:]if len(binary) % 8 != 0:    binary = &#39;0&#39; * (8 - len(binary) % 8) + binarytry:    flag = &#39;&#39;.join(chr(int(binary[i:i+8], 2)) for i in range(0, len(binary), 8))    if all(32 &lt;= ord(c) &lt;= 126 for c in flag):          print(&quot;Flag:&quot;, flag)        breakexcept:    continue</code></pre><p>else:<br>    print(“No valid flag found.”)</p><hr><h2 id="4-Flag"><a href="#4-Flag" class="headerlink" title="4. Flag"></a>4. Flag</h2><p>NSSCTF{WHAt_BASe31}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第五篇博客</title>
     <link href="/2026/02/09/%E7%AC%AC%E4%BA%94%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/09/%E7%AC%AC%E4%BA%94%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
