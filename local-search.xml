@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第八篇博客</title>
+    <link href="/2026/02/28/%E7%AC%AC%E5%85%AB%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/02/28/%E7%AC%AC%E5%85%AB%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：BJDCTF 2020</li><li><strong>题目名称</strong>：Easy</li><li><strong>类型</strong>：Reserve（逆向工程）</li></ul><hr><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1. 查壳"></a>1. 查壳</h2><p>将下载好的文件拖入exeinfope中进行查壳，结果无壳，64位<br><img src="/images/8image-1.png" alt="alt text"></p><hr><h2 id="2-逆向分析"><a href="#2-逆向分析" class="headerlink" title="2. 逆向分析"></a>2. 逆向分析</h2><p>将文件拖入IDA，按F5查看伪代码，结果什么也没有<br><img src="/images/8image-2.png" alt="alt text"><br>这时候发现这边main函数上面有一个ques函数，ques不是和question有些像，接着就跟进一下<br><img src="/images/8image-3.png" alt="alt text"><br>于是用ollydbg打开<br><img src="/images/8image-4.png" alt="alt text"><br><img src="/images/8image-5.png" alt="alt text"><br>发现od里的和ida里的ques函数汇编一样的,所以od里这里的push应该就是ques函数了，然后在这里f2断点</p><hr><h2 id="3-解码"><a href="#3-解码" class="headerlink" title="3. 解码"></a>3. 解码</h2><p><img src="/images/8image-6.png" alt="alt text"></p><hr><h2 id="4-Flag"><a href="#4-Flag" class="headerlink" title="4. Flag"></a>4. Flag</h2><p>NSSCTF{HACKIT4FUN}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第七篇博客</title>
     <link href="/2026/02/28/%E7%AC%AC%E4%B8%83%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/28/%E7%AC%AC%E4%B8%83%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
