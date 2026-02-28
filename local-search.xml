@@ -8,7 +8,7 @@
     <link href="/2026/02/28/%E7%AC%AC%E4%B8%83%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/28/%E7%AC%AC%E4%B8%83%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：SWPUCTF 2022 新生赛</li><li><strong>题目名称</strong>：xor</li><li><strong>类型</strong>：Reserve（逆向工程）</li></ul><hr><h2 id="1-查壳"><a href="#1-查壳" class="headerlink" title="1. 查壳"></a>1. 查壳</h2><p>将下载好的文件拖入exeinfope中，结果没有壳，64位<br><img src="/images/7image-1.png" alt="alt text"></p><hr><h2 id="2-逆向分析"><a href="#2-逆向分析" class="headerlink" title="2. 逆向分析"></a>2. 逆向分析</h2><p>将文件拖入IDA中，接着按shift+F2查找字符串<br><img src="/images/7image-2.png" alt="alt text"><br>发现可以字符串继续跟进<br><img src="/images/7image-3.png" alt="alt text"><br>继续跟进<br><img src="/images/7image-4.png" alt="alt text"><br>接着按F5查看伪代码<br><img src="/images/7image-5.png" alt="alt text"><br>发现可疑字符串需要解码</p><hr><h2 id="3-解码"><a href="#3-解码" class="headerlink" title="3. 解码"></a>3. 解码</h2><p>根据题目编写代码进行解码，代码如下：<br>#include &lt;stdio.h&gt;<br>#include &lt;string.h&gt;</p><p>int main()<br>{<br>int i,j;<br>char a[] &#x3D; “LQQAVDyZMP]3q]emmf]uc{]vm]glap{rv]dnce”;<br>j &#x3D; strlen(a);<br>char b[j];<br>for ( i&#x3D;0;i&lt;j;i++ ){<br>b[i] &#x3D; a[i]^2;<br>}<br>printf(“%s”, b);<br><br>return 0;<br>}</p><hr><h2 id="4-Flag"><a href="#4-Flag" class="headerlink" title="4. Flag"></a>4. Flag</h2><p>NSSCTF{XOR_1s_good_way_to_encrypt_flag}</p>]]></content>
     
     
     
