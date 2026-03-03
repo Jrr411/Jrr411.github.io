@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第九篇博客</title>
+    <link href="/2026/03/03/%E7%AC%AC%E4%B9%9D%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/03/03/%E7%AC%AC%E4%B9%9D%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：LitCTF 2023</li><li><strong>题目名称</strong>：喜欢我的压缩包么 (初级)</li><li><strong>类型</strong>：Misc</li></ul><hr><h2 id="1-初次尝试解压"><a href="#1-初次尝试解压" class="headerlink" title="1. 初次尝试解压"></a>1. 初次尝试解压</h2><p>直接用解压工具解压,发现需要密码<br><img src="/images/9image-1.png" alt="alt text"></p><hr><h2 id="2-检查是否为伪加密"><a href="#2-检查是否为伪加密" class="headerlink" title="2. 检查是否为伪加密"></a>2. 检查是否为伪加密</h2><p>拖入010中发现文件头不是00 00，所以不是伪加密<br><img src="/images/9image-2.png" alt="alt text"></p><hr><h2 id="3-分析题目"><a href="#3-分析题目" class="headerlink" title="3. 分析题目"></a>3. 分析题目</h2><p>根据题目提示知道是6位密码<br><img src="/images/9image-3.png" alt="alt text"><br>那接下来直接爆破,将文件拖入ARCHPR中<br><img src="/images/9image-4.png" alt="alt text"><br>开始爆破<br><img src="/images/9image-5.png" alt="alt text"><br>得到了密码114514</p><hr><h2 id="4-解码"><a href="#4-解码" class="headerlink" title="4. 解码"></a>4. 解码</h2><p>输入密码得到flag<br><img src="/images/9image-6.png" alt="alt text"></p><hr><h2 id="5-Flag"><a href="#5-Flag" class="headerlink" title="5. Flag"></a>5. Flag</h2><p>LitCTF{Do-u-like-my-zip-p4ck?}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第八篇博客</title>
     <link href="/2026/02/28/%E7%AC%AC%E5%85%AB%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/02/28/%E7%AC%AC%E5%85%AB%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
