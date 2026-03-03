@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第十篇博客</title>
+    <link href="/2026/03/03/%E7%AC%AC%E5%8D%81%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2026/03/03/%E7%AC%AC%E5%8D%81%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="题目信息"><a href="#题目信息" class="headerlink" title="题目信息"></a>题目信息</h2><ul><li><strong>比赛</strong>：安徽省赛 2021</li><li><strong>题目名称</strong>：misc签到</li><li><strong>类型</strong>：Misc</li></ul><hr><h2 id="1-初次尝试解压"><a href="#1-初次尝试解压" class="headerlink" title="1. 初次尝试解压"></a>1. 初次尝试解压</h2><p>直接用解压工具解压得到一个图片<br><img src="/images/10image-1.png" alt="alt text"></p><hr><h2 id="2-分析图片"><a href="#2-分析图片" class="headerlink" title="2. 分析图片"></a>2. 分析图片</h2><p>将文件拖入010中，感觉文件有些可疑，这好像是一个密码<br><img src="/images/10image-2.png" alt="alt text"><br>接下来将文件拖入kali中，foremost一下,得到一个压缩包<br><img src="/images/10image-3.png" alt="alt text"><br>直接解压这个压缩包，发现需要密码，输入刚才的密码this_is_password<br><img src="/images/10image-4.png" alt="alt text"><br>得到flag</p><hr><h2 id="3-Flag"><a href="#3-Flag" class="headerlink" title="3. Flag"></a>3. Flag</h2><p>flag{ab32056rfanla12380asf13gpnsan}</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第九篇博客</title>
     <link href="/2026/03/03/%E7%AC%AC%E4%B9%9D%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
     <url>/2026/03/03/%E7%AC%AC%E4%B9%9D%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
